@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<table>
+
+<tr>
+<td colspan=2><center><font size=4><b>Personal Web Login</b></font>
+</center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid" id="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd" id="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="getForm();" value="Login">
+</td>
+</tr>
+
+</table>
+
+<script language="javascript">
+function getForm() {
+
+  console.log("CODE IS RUNNING")
+  userID = document.getElementById("userid").value
+  password = document.getElementById("pwd").value
+
+  if(userID == "admin" && password == "admin") {
+    console.log("CORRECT")
+
+  window.location.href = "home.html";
+
+  } else {
+    console.log("INCORRECT")
+  }
+
+}
+</script>
+
+</body>
+</html>
